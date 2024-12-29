@@ -25,3 +25,13 @@ A javascript app providing real-time exchange rate information to help users con
 
 - [Freecurrency API](https://freecurrencyapi.com/)
 - [Google Fonts](https://fonts.google.com/)
+
+### Screenshots
+
+![Currency Converter](https://raw.githubusercontent.com/refinedguides/currency-converter/main/screenshot.png)
+
+### Support Me
+
+If you'd like to support me, consider buying me a coffee. Thanks!
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/refinedguides)

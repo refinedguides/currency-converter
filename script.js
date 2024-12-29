@@ -151,14 +151,14 @@ const updateInputs = () => {
 
   const result = baseValue * rates[base][target];
 
-  ui.targetInput.value = result.toFixed(4);
+  ui.targetInput.value = result.toFixed(2);
   ui.baseInput.value = baseValue;
 };
 
 const updateExchangeRate = () => {
   const { base, target, rates } = state;
 
-  const rate = rates[base][target].toFixed(4);
+  const rate = rates[base][target].toFixed(2);
 
   ui.exchangeRate.textContent = `1 ${base} = ${rate} ${target}`;
 };
@@ -184,10 +184,10 @@ const getImageURL = (code) => {
 const loadExchangeRate = () => {
   const { base, rates } = state;
   if (typeof rates[base] !== "undefined") {
-    // if the base rates are in state, then show it
+    // if the base rates are already in the state, then show it
     displayConversion();
   } else {
-    // else, fetch the exchange rate first
+    // else, fetch the updated exchange rates
     fetchExchangeRate();
   }
 };
